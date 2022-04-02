@@ -1,3 +1,16 @@
+
+
+<img src="https://angular.io/assets/images/logos/angular/angular.svg" alt=" " style="height:400;" />
+
+# Projeto CrudP ✌✌✌
+
+Pequeno projeto em Angular para cadadastro de produtos.
+Api de produtos provisionada com Json-Server
+Interface de tipografa e icones  com Angular Material Icons
+
+
+
+
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
