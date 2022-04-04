@@ -12,8 +12,8 @@ export class ProductCreateComponent implements OnInit {
 
 /*Mock temp */
 product: Product = {
-name:'Computador Gamer',
-price: 2300.00
+name:'',
+price: 0.00
 }
 
 
