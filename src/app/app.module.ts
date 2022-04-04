@@ -32,6 +32,7 @@ import { MatSortModule } from '@angular/material/sort';
 
 import LocalePt from '@angular/common/locales/pt';
 import { registerLocaleData} from '@angular/common';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
  registerLocaleData(LocalePt);
 
 
@@ -48,7 +49,8 @@ import { registerLocaleData} from '@angular/common';
     ProductCreateComponent,
     CyanDirective,
     ProductReadComponent,
-    ProductReadbbComponent
+    ProductReadbbComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,
