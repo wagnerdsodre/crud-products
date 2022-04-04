@@ -24,6 +24,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { CyanDirective } from './directives/cyan.directive';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
 
 
 
@@ -39,7 +40,8 @@ import { CyanDirective } from './directives/cyan.directive';
     RedDirective,
     ForDirective,
     ProductCreateComponent,
-    CyanDirective
+    CyanDirective,
+    ProductReadComponent
   ],
   imports: [
     BrowserModule,
