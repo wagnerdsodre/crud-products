@@ -1,6 +1,10 @@
-.container-top{
+.container{
     display: flex;
     flex-direction: row;
     align-items: stretch;
     align-content: space-around;
+}
+
+.container .new{
+    padding-left: 15px;
 }
