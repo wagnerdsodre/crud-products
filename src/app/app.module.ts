@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,8 +25,14 @@ import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { CyanDirective } from './directives/cyan.directive';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductReadbbComponent } from './components/product/product-readbb/product-readbb.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
-
+import LocalePt from '@angular/common/locales/pt';
+import { registerLocaleData} from '@angular/common';
+ registerLocaleData(LocalePt);
 
 
 @NgModule({
@@ -41,7 +47,8 @@ import { ProductReadComponent } from './components/product/product-read/product-
     ForDirective,
     ProductCreateComponent,
     CyanDirective,
-    ProductReadComponent
+    ProductReadComponent,
+    ProductReadbbComponent
   ],
   imports: [
     BrowserModule,
@@ -56,9 +63,15 @@ import { ProductReadComponent } from './components/product/product-read/product-
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
-  providers: [],
+  providers: [{
+   provide:LOCALE_ID,
+   useValue: 'pt-BR'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
